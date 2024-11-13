@@ -5,7 +5,7 @@ class Base
 
     public Base()
     {
-        System.out.println("Inside Base Constructor");
+        System.out.println("Inside Base constructor");
     }
     public void Fun()
     {
@@ -13,26 +13,29 @@ class Base
     }
 }
 
-class Derived extends Base        // class Derived : public Base (C++)
+class Derived extends Base      // class Derived : public Base
 {
     public int X,Y;
 
     public Derived()
     {
         System.out.println("Inside Derived constructor");
-    }
+    }    
     public void Gun()
     {
         System.out.println("Inside Derived Gun");
     }
 }
-class SingleLevel 
+
+class SingleLevel
 {
-    public static void main(String srgs[])
+    public static void main(String A[])
     {
+        System.out.println("Inside main method");
+        
         Derived dobj = new Derived();
 
         dobj.Fun();
         dobj.Gun();
-    }    
+    }
 }
